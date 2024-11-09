@@ -26,4 +26,15 @@ export class TaskManager {
     }
     return false;
   }
+
+  completeTask(id: number): boolean {
+
+    const selectedTask = this.tasks.find((task) => task.id === id)
+
+    if (selectedTask){
+        selectedTask.completed = true
+        return true
+    }
+    return false
+  }
 }

@@ -2,7 +2,7 @@ import { TaskManager } from "./models/TaskManager";
 
 const taskManager = new TaskManager()
 
-const btn: HTMLElement = document.getElementById("btn")!
+const addBtn: HTMLElement = document.getElementById("btn")!
 const title = document.getElementById("title")! as HTMLInputElement
 
 function addNewTask(){
@@ -16,6 +16,8 @@ function addNewTask(){
   
 }
 
-if (btn) {
-    btn.addEventListener("click", () => addNewTask());
+
+
+if (addBtn) {
+    addBtn.addEventListener("click", () => addNewTask());
   }
